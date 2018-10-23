@@ -1,8 +1,8 @@
 ## To write a pair of functions that cache the inverse of a matrix.
 
 ## This function creates a special "matrix" object that can cache its inverse.
-#### 1. Set a matrix
-#### 2. Get the inverse of the matrix
+## 1. Set a matrix
+## 2. Get the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
     inver <- NULL
@@ -11,7 +11,7 @@ makeCacheMatrix <- function(x = matrix()) {
         inver <<- NULL
     }
     get <- function() x
-    SetInver <- function(solveMatrix) inver <<- solveMatrix
+    SetInver <- function(inverse) inver <<- inverse
     GetInver <- function() inver
     list(set = set, get = get, SetInver = SetInver, GetInver = GetInver)
     
